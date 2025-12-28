@@ -8,7 +8,7 @@ import buyerRoutes from './routes/buyerRoutes';
 import clusterRoutes from './routes/clusterRoutes';
 import demandRoutes from './routes/demandRoutes';
 import { errorHandler } from './middlewares/errorMiddleware';
-import { env } from 'config/env';
+import { env } from './config/env';
 
 const app = express();
 
