@@ -1,7 +1,7 @@
-import Cluster, { IClusterModel } from '../models/Cluster';
+import Cluster, { ICluster } from '../models/Cluster';
 import Farmer from '../models/Farmer';
 
-export const createCluster = async (userId: string, clusterData: Partial<IClusterModel>) => {
+export const createCluster = async (userId: string, clusterData: Partial<ICluster>) => {
   const farmer = await Farmer.findOne({ user: userId });
   if (!farmer) throw new Error('Farmer profile not found');
 
