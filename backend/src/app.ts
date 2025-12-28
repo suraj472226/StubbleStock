@@ -16,7 +16,8 @@ const app = express();
 const allowedOrigins = [
   env.CLIENT_URL,            // Your Production URL from .env
   'http://localhost:8080',   // Local development
-  'http://localhost:5173'    // Standard Vite port
+  'http://localhost:5173',
+  'https://stubble-stock.vercel.app/'
 ];
 
 app.use(cors({
