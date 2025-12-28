@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import * as demandService from '../services/demandService';
-import Demand from 'models/Demand';
+import Demand from '../models/Demand';
 
 export const createDemand = async (req: any, res: Response) => {
   try {

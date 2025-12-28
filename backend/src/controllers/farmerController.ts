@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import * as farmerService from '../services/farmerService';
 import Farmer from '../models/Farmer';
-import User from 'models/User';
+import User from '../models/User';
 
 export const getDashboard = async (req: any, res: Response) => {
   try {

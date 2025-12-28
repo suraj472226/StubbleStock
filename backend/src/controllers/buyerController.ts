@@ -1,6 +1,6 @@
 import { Response } from 'express';
 import * as buyerService from '../services/buyerService';
-import Cluster from 'models/Cluster';
+import Cluster from '../models/Cluster';
 
 export const getDashboard = async (req: any, res: Response) => {
   try {
